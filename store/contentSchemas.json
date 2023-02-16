@@ -12,16 +12,6 @@
             "widget": {
               "ui.widget": "image-uploader"
             }
-          },
-          "titleBullet": {
-            "title": "Título de Bullet",
-            "$ref": "app:vtex.native-types#/definitions/text",
-            "default": ""
-          },
-          "link": {
-            "title": "Título de Bullet",
-            "$ref": "app:vtex.native-types#/definitions/link",
-            "default": ""
           }
         }
       }

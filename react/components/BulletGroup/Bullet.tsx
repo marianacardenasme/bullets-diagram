@@ -1,35 +1,22 @@
 import React from 'react'
-import { Link } from 'vtex.render-runtime'
-import { LinkProps } from './BulletTypes'
 import { useCssHandles } from 'vtex.css-handles'
 
 import "./styles.css"
 
 type Props = {
   src: string
-  titleBullet: string
-  link: LinkProps
 }
 
-const Bullet = ({src, titleBullet, link}: Props ) => {
+const Bullet = ({src}: Props ) => {
   const CSS_HANDLES = [
     "bullet__item",
-    "bullet__item--title",
-    "bullet__item----image",
-    "bullet__item--link"
+    "bullet__item----image"
   ]
   const handles = useCssHandles(CSS_HANDLES) //responsable de mostrar una clase en vtex io
 
   return (
   <div className={handles["bullet__item"]}>
-    <Link
-    to = {link.url}
-    className={handles["handles.bullet__item--link"]}
-    >
-      <img className={`${handles["bullet__item--image"]} externalClass`} src={src} alt={titleBullet} />
-      <p className={handles["bullet__item--title"]}>{titleBullet}</p>
-    </Link>
-
+    <img className={`${handles["bullet__item--image"]} externalClass`} src={src} />
   </div>
   )
 }

@@ -1,12 +1,12 @@
 {
-  "list-context.bullet-group": {
+  "list-context.bullet-group-simplified": {
     "component": "BulletGroup",
     "composition": "children",
     "allowed": "*",
     "content": {
       "properties": {
         "bullets": {
-          "$ref": "app:vtexiosprueba2022.bullets-diagram#/definitions/BulletGroup"
+          "$ref": "app:vtexiosprueba2022.bullets-diagram-simplified#/definitions/BulletGroup"
         }
       }
     }

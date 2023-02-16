@@ -10,20 +10,6 @@ export const getBulletsAsTSXList = (
     return <Bullet
     key={index}
     src={bullet.image}
-    titleBullet={bullet.titleBullet}
-    link={
-      bullet.link
-      ?
-      bullet.link
-      :
-      {
-        url: '',
-        attributeNofollow: false,
-        attributeTitile: '',
-        openNewTab: false,
-        newTab: false
-      }
-    }
     />
   })
 )

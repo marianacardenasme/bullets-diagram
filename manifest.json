@@ -1,6 +1,6 @@
 {
   "vendor": "vtexiosprueba2022",
-  "name": "bullets-diagram",
+  "name": "bullets-diagram-simplified",
   "version": "0.0.1",
   "title": "bullets-diagram",
   "description": "contexto de elementos que renderiza los niveles inferiores de navegación dentro de una lista de bullets con imágenes",
